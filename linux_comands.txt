@@ -1,0 +1,23 @@
+cat > pets.txt
+cat > pack_animals.txt
+cat pack_animals.txt pets.txt > animals.txt
+cat animals.txt
+
+Вывод:
+        camel
+        hors
+        donkey
+        dog
+        cat
+        hamster
+
+mv animals.txt human_friends.txt 
+mkdir animals
+mv human_friends.txt animals/ 
+
+sudo apt update
+sudo apt install mysql-server mysql-client
+
+sudo apt download zip
+sudo dpkg -i zip_3.0-12build2_amd64.deb
+sudo dpkg -r --force-depends zip
