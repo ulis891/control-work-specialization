@@ -25,15 +25,15 @@ public class Menu {
 				scanner.nextLine();
 
 				switch (choice) {
-					case 1 -> addNewAnimal();
-					case 2 -> database.displayAllAnimals();
-					case 3 -> displayAnimalCommands();
-					case 4 -> teachNewCommand();
-					case 0 -> {
+					case 1 : addNewAnimal();
+					case 2 : database.displayAllAnimals();
+					case 3 : displayAnimalCommands();
+					case 4 : teachNewCommand();
+					case 0 : {
 						System.out.println("Программа завершена.");
 						return;
 					}
-					default -> System.out.println("Неверный выбор. Попробуйте снова.");
+					default : System.out.println("Неверный выбор. Попробуйте снова.");
 				}
 			} catch (InputMismatchException e) {
 				System.out.println("Ошибка: неверный формат ввода. Попробуйте снова.");
@@ -60,19 +60,19 @@ public class Menu {
 
 		Animal animal;
 		switch (animalClass) {
-			case 1 -> animal = new Dog(name, skills);
-			case 2 -> animal = new Cat(name, skills);
-			case 3 -> animal = new Hamster(name, skills);
-			case 4 -> animal = new Donkey(name, skills);
-			case 5 -> animal = new Horse(name, skills);
-			default -> {
+			case 1 : animal = new Dog(name, skills);
+			case 2 : animal = new Cat(name, skills);
+			case 3 : animal = new Hamster(name, skills);
+			case 4 : animal = new Donkey(name, skills);
+			case 5 : animal = new Horse(name, skills);
+			default : {
 				System.out.println("Неверный выбор класса животного.");
 				return;
 			}
 		}
 
-		database.addAnimal(animal);
-		System.out.println("Животное успешно добавлено в базу данных.");
+		// database.addAnimal(animal);
+		// System.out.println("Животное успешно добавлено в базу данных.");
 	}
 
 	private void displayAnimalCommands() {

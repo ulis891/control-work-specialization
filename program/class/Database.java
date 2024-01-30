@@ -3,7 +3,7 @@ import java.io.*;
 import java.util.*;
 
 public class Database {
-	private final List<Animal> animals;
+	private final ArrayList<Animal> animals;
 	private static final String FILE_PATH = "app/database.txt";
 
 	public Database() {
@@ -58,17 +58,19 @@ public class Database {
 
 					Animal animal;
 					switch (className) {
-						case "Dog" -> animal = new Dog(name, skills);
-						case "Cat" -> animal = new Cat(name, skills);
-						case "Hamster" -> animal = new Hamster(name, skills);
-						case "Donkey" -> animal = new Donkey(name, skills);
-						case "Horse" -> animal = new Horse(name, skills);
-						default -> {
+						case "Dog" : animal = new Dog(name, skills);
+						case "Cat" : animal = new Cat(name, skills);
+						case "Hamster" : animal = new Hamster(name, skills);
+						case "Donkey" : animal = new Donkey(name, skills);
+						case "Horse" : animal = new Horse(name, skills);
+						default : {
 							System.out.println("Неизвестный класс животного: " + className);
 							continue;
 						}
 					}
-					animals.add(animal);
+
+					// animals.add(animal);
+					// animals.add(animal);
 				} else {
 					System.out.println("Некорректные данные в файле: " + line);
 				}
