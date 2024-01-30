@@ -1,8 +1,8 @@
-package src;
-
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import classes.*;
+
+
 public class Menu {
     private final Database database;
     private final Scanner scanner;
