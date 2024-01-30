@@ -1,4 +1,3 @@
-// Класс Menu для отображения меню и взаимодействия с пользователем
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -61,18 +60,28 @@ public class Menu {
 		Animal animal;
 		switch (animalClass) {
 			case 1 : animal = new Dog(name, skills);
+			database.addAnimal(animal);
+		System.out.println("Животное успешно добавлено в базу данных.");
 			case 2 : animal = new Cat(name, skills);
+			database.addAnimal(animal);
+		System.out.println("Животное успешно добавлено в базу данных.");
 			case 3 : animal = new Hamster(name, skills);
+			database.addAnimal(animal);
+		System.out.println("Животное успешно добавлено в базу данных.");
 			case 4 : animal = new Donkey(name, skills);
+			database.addAnimal(animal);
+		System.out.println("Животное успешно добавлено в базу данных.");
 			case 5 : animal = new Horse(name, skills);
+			database.addAnimal(animal);
+		System.out.println("Животное успешно добавлено в базу данных.");
 			default : {
 				System.out.println("Неверный выбор класса животного.");
 				return;
 			}
 		}
+		
 
-		// database.addAnimal(animal);
-		// System.out.println("Животное успешно добавлено в базу данных.");
+		
 	}
 
 	private void displayAnimalCommands() {

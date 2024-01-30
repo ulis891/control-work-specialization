@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Database {
 	private final ArrayList<Animal> animals;
-	private static final String FILE_PATH = "app/database.txt";
+	private static final String FILE_PATH = "program/DB/database.txt";
 
 	public Database() {
 		animals = new ArrayList<>();
@@ -59,18 +59,22 @@ public class Database {
 					Animal animal;
 					switch (className) {
 						case "Dog" : animal = new Dog(name, skills);
+									animals.add(animal);
 						case "Cat" : animal = new Cat(name, skills);
+									animals.add(animal);
 						case "Hamster" : animal = new Hamster(name, skills);
+									animals.add(animal);
 						case "Donkey" : animal = new Donkey(name, skills);
+									animals.add(animal);
 						case "Horse" : animal = new Horse(name, skills);
+									animals.add(animal);
 						default : {
 							System.out.println("Неизвестный класс животного: " + className);
 							continue;
 						}
 					}
 
-					// animals.add(animal);
-					// animals.add(animal);
+					
 				} else {
 					System.out.println("Некорректные данные в файле: " + line);
 				}
