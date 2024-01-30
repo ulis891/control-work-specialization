@@ -199,9 +199,9 @@ select * from AllAnimals
 right join AllTypes
 on AllAnimals.typeAnimal = AllTypes.typeAnimal;
 ```
-![sql1](artifacts\2024-01-29_23-45-53.png)
-![sql2](artifacts\2024-01-29_23-46-20.png)
-![sql3](artifacts\2024-01-29_23-46-39.png)
+![sql1]([artifacts\2024-01-29_23-45-53.png](https://github.com/ulis891/control-work-specialization/blob/main/artifacts/2024-01-29_23-45-53.png?raw=true))
+![sql2]([artifacts\2024-01-29_23-46-20.png](https://github.com/ulis891/control-work-specialization/blob/main/artifacts/2024-01-29_23-46-20.png?raw=true))
+![sql3]([artifacts\2024-01-29_23-46-39.png](https://github.com/ulis891/control-work-specialization/blob/main/artifacts/2024-01-29_23-46-39.png?raw=true)https://github.com/ulis891/control-work-specialization/blob/main/artifacts/2024-01-29_23-46-39.png?raw=true)
 
 ### 13 - 15
 [ссылка](https://github.com/ulis891/control-work-specialization/tree/main/program)
