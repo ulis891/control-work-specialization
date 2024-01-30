@@ -1,5 +1,0 @@
-Dog,tir,yt,uy
-Cat,tir,yt,uy
-Hamster,tir,yt,uy
-Donkey,tir,yt,uy
-Horse,tir,yt,uy
