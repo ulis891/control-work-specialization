@@ -5,7 +5,6 @@
 9. Заполнить низкоуровневые таблицы именами(животных), командами
 которые они выполняют и датами рождения
 **/
-SET SQL_SAFE_UPDATES = 0;
 
 drop database if exists HumanFriends;
 create database HumanFriends;

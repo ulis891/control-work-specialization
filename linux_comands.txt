@@ -21,3 +21,4 @@ sudo apt install mysql-server mysql-client
 sudo apt download zip
 sudo dpkg -i zip_3.0-12build2_amd64.deb
 sudo dpkg -r --force-depends zip
+
